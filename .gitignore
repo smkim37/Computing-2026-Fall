@@ -1,0 +1,47 @@
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Local editor and assistant settings
+/2026-1학기 이론 교안/
+/tests/
+.vscode/
+.idea/
+/.codex/
+/.agents/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local environment files (keep shareable examples)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# GitHub Pages build output
+/_site/
