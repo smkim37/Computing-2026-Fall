@@ -43,7 +43,7 @@
 
 ## 웹 안내 사용하기
 
-[배포 사이트](https://smkim37.github.io/Computing-2026-Fall/)에서 웹 안내를 이용할 수 있습니다. 최초 배포가 완료된 뒤 접속할 수 있습니다.
+[배포 사이트](https://sumin-kim.com/Computing-2026-Fall/)에서 웹 안내를 이용할 수 있습니다. 계정에 연결된 도메인을 사용하며, [GitHub Pages 기본 주소](https://smkim37.github.io/Computing-2026-Fall/)로도 접근할 수 있습니다.
 
 저장소를 내려받은 뒤 [주차별 실습 목차](website/main.html)를 웹브라우저에서 엽니다.
 1~15주차의 요일과 주제를 확인하고, 완성된 1~3주차 실습으로 이동할 수 있습니다. 아직 제작하지 않은 주차는 비활성화되어 있습니다.
