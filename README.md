@@ -2,7 +2,7 @@
 
 2026학년도 2학기 컴퓨팅핵심 실습 자료입니다.
 
-[실습 사이트](https://sumin-kim.com/Computing-2026-Fall/)
+실습 사이트: https://sumin-kim.com/Computing-2026-Fall
 
 ## 주차별 실습
 
