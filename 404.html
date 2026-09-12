@@ -4,16 +4,78 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>컴퓨팅핵심 실습</title>
+<!-- Course loading screen: keep before embedded fonts and lesson data. -->
+<style id="page-loader-style">
+#page-loader{display:none;position:fixed;inset:0;z-index:10000;place-content:center;justify-items:center;gap:24px;background:#fafbf8;color:#245e4f;font:500 16px/1.5 system-ui,sans-serif;letter-spacing:-.3px}
+html.page-is-loading #page-loader{display:grid}
+html.page-is-loading{overflow:hidden}
+#page-loader .loading-mark{display:grid;grid-template-columns:26px 26px;grid-template-rows:26px 26px;gap:8px}
+#page-loader .loading-tile{position:relative;border-radius:6px;background:#c4d8b0;overflow:hidden}
+#page-loader .loading-tile:nth-child(3){grid-area:2/2;background:#70945b}
+#page-loader .loading-tile:nth-child(4){grid-area:2/1}
+#page-loader .loading-tile::after{content:"";position:absolute;inset:0;background:#245e4f;opacity:0;animation:loading-clockwise 1.2s linear infinite;will-change:opacity}
+#page-loader .loading-tile:nth-child(2)::after{animation-delay:-.9s}
+#page-loader .loading-tile:nth-child(3)::after{animation-delay:-.6s}
+#page-loader .loading-tile:nth-child(4)::after{animation-delay:-.3s}
+#page-loader p{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@keyframes loading-clockwise{0%,20%,100%{opacity:1}25%,95%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#page-loader .loading-tile::after{animation:none;will-change:auto}#page-loader .loading-tile:first-child::after{opacity:1}}
+</style>
+<script>
+(() => {
+  const root = document.documentElement;
+  let navigationTimer;
+  let navigating = false;
+  const setLoading = active => {
+    root.classList.toggle('page-is-loading', active);
+    root.setAttribute('aria-busy', String(active));
+    document.querySelectorAll('.deck,.container').forEach(el => { el.inert = active; });
+  };
+  const finish = () => { clearTimeout(navigationTimer); navigating = false; setLoading(false); };
+  setLoading(true);
+  document.addEventListener('DOMContentLoaded', async () => {
+    setLoading(true);
+    const assets = [...document.images].map(img => img.decode().catch(() => {}));
+    if (document.fonts) assets.push(document.fonts.ready);
+    let assetTimer;
+    await Promise.race([Promise.allSettled(assets), new Promise(resolve => { assetTimer = setTimeout(resolve, 8000); })]);
+    clearTimeout(assetTimer);
+    requestAnimationFrame(() => requestAnimationFrame(() => { if (!navigating) finish(); }));
+  }, {once:true});
+  window.addEventListener('pageshow', event => { if (event.persisted) finish(); });
+  window.addEventListener('pagehide', () => clearTimeout(navigationTimer));
+  window.navigateWithCourseLoader = (destination, replace = false) => {
+    navigating = true;
+    setLoading(true);
+    clearTimeout(navigationTimer);
+    navigationTimer = setTimeout(finish, 15000);
+    requestAnimationFrame(() => setTimeout(() => location[replace ? 'replace' : 'assign'](destination), 0));
+  };
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+    const destination = new URL(link.href, location.href);
+    if (destination.origin !== location.origin || !/\/(?:main|week\d+_prac)\.html$/.test(destination.pathname)) return;
+    event.preventDefault();
+    window.navigateWithCourseLoader(destination.href);
+  });
+})();
+</script>
+</head>
+<body>
+<div id="page-loader" role="status" aria-live="polite" aria-label="자료를 불러오는 중">
+  <div class="loading-mark" aria-hidden="true"><span class="loading-tile"></span><span class="loading-tile"></span><span class="loading-tile"></span><span class="loading-tile"></span></div>
+  <p>자료를 불러오는 중</p>
+</div>
   <script>
     const oldPages = ['main.html', 'week1_prac.html', 'week2_prac.html', 'week3_prac.html'];
     const base = '/Computing-2026-Fall/';
     const filename = location.pathname.slice(base.length);
     if (location.pathname.startsWith(base) && oldPages.includes(filename)) {
-      location.replace(base + 'website/' + filename + location.search + location.hash);
+      window.navigateWithCourseLoader(base + 'website/' + filename + location.search + location.hash, true);
     }
   </script>
-</head>
-<body>
+
   <p><a href="/Computing-2026-Fall/website/main.html">컴퓨팅핵심 실습으로 이동</a></p>
 </body>
 </html>
