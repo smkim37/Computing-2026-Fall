@@ -1,0 +1,27 @@
+[
+  {
+    "file": "week6_chal1.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: landscape educational problem illustration for a Korean university computing course. Create one 1536x1024 horizontal image. A Korean university student in a campus parcel room checking several cardboard shipping boxes of varied sizes and a digital weighing scale on a wooden counter. Boxes are casually unsorted. Do not show values or sorting instructions. Style: warm polished hand-painted anime editorial illustration, natural anatomy, soft daylight, muted forest green, sage, cream and warm wood palette, calm realistic university surroundings, no text, no watermark, no logo. Show only the problem situation, never the solution. Opaque background."
+  },
+  {
+    "file": "week6_chal2.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: landscape educational problem illustration for a Korean university computing course. Create one 1536x1024 horizontal image. Two Korean university festival volunteers at a booth looking at scattered score cards on a wooden desk, colorful campus festival booths softly visible behind them. No readable scores, rankings, or algorithm diagrams. Style: warm polished hand-painted anime editorial illustration, natural anatomy, soft daylight, muted forest green, sage, cream and warm wood palette, calm realistic university surroundings, no text, no watermark, no logo. Show only the problem situation, never the solution. Opaque background."
+  },
+  {
+    "file": "week6_chal3.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: landscape educational problem illustration for a Korean university computing course. Create one 1536x1024 horizontal image. Korean university running club volunteers at a track finish-line desk, recording runners' times with a stopwatch and entry cards. Several runners in the background. No ranking results or readable text. Style: warm polished hand-painted anime editorial illustration, natural anatomy, soft daylight, muted forest green, sage, cream and warm wood palette, calm realistic university surroundings, no text, no watermark, no logo. Show only the problem situation, never the solution. Opaque background."
+  },
+  {
+    "file": "week6_chal4.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: landscape educational problem illustration for a Korean university computing course. Create one 1536x1024 horizontal image. Two Korean university students at a library study desk comparing two arrangements of neutral number tiles beside an open laptop and notebooks. This conveys comparing sorting methods, with no arrows, diagrams, legible numbers, equations, or solution. Style: warm polished hand-painted anime editorial illustration, natural anatomy, soft daylight, muted forest green, sage, cream and warm wood palette, calm realistic university surroundings, no text, no watermark, no logo. Show only the problem situation, never the solution. Opaque background."
+  },
+  {
+    "file": "week6_extra1.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: landscape educational problem illustration for a Korean university computing course. Create one 1536x1024 horizontal image. Korean university photo contest volunteers reviewing photo entry cards with score badges at a warm campus exhibition table. Entries scattered naturally, with no sorted results, no readable scores, no podium or winner. Style: warm polished hand-painted anime editorial illustration, natural anatomy, soft daylight, muted forest green, sage, cream and warm wood palette, calm realistic university surroundings, no text, no watermark, no logo. Show only the problem situation, never the solution. Opaque background."
+  }
+]
