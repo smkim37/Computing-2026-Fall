@@ -62,77 +62,9 @@ html.page-is-loading{overflow:hidden}
   });
 })();
 </script>
-<style>
 
-:root{--ink:#233f37;--green:#245e4f;--muted:#647369;--line:#dce3d8;--mint:#edf3e7;--sans:"Practice Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif;--mono:"SFMono-Regular",Consolas,"Liberation Mono",var(--sans)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-a:focus-visible{outline:3px solid #c78c3c;outline-offset:5px}
-::selection{background:#d4e7bc}
-h1,h2,h3,p{margin:0}
-.container{max-width:1160px;margin:0 auto;padding:0 36px}
-.skip-link{position:fixed;top:-70px;left:20px;padding:12px 20px;background:var(--green);color:white;z-index:5;border-radius:8px}
-.skip-link:focus{top:15px}
-.masthead{display:flex;align-items:center;justify-content:space-between;padding:27px 0;border-bottom:1px solid var(--line);gap:20px}
-.brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:650;letter-spacing:-.4px}
-.brand-mark{width:30px;height:30px;flex:none}
-.semester{font-size:15px;color:var(--muted)}
-.schedule-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0 20px}
-.schedule-heading h1{font-size:23px;font-weight:650;letter-spacing:-.7px}
-.availability{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--muted)}
-.availability b{color:var(--green);font-weight:700}
-.live-dot{width:7px;height:7px;background:#507d42;border-radius:50%}
-main{padding-bottom:28px}
-.schedule{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:18px;list-style:none;padding:0;margin:0}
-.schedule>li{margin:0;min-width:0}
-.week-row{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;gap:12px;height:100%;min-height:212px;padding:20px;border:1px solid var(--line);border-radius:16px;text-decoration:none;background:#fafbf8}
-.week-number{font:500 29px var(--mono);display:flex;gap:7px;align-items:baseline;color:#728269}
-.week-number small{font:12px var(--sans);color:#71816a}
-.week-day{display:flex;align-items:center;gap:7px;font-size:12px;color:#6c7b65;white-space:nowrap}
-.week-day time{font:15px var(--mono);color:#516848}
-.topic{grid-column:1/-1}
-.topic h2{font-size:20px;font-weight:600;letter-spacing:-.5px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
-.topic p{font-size:14px;line-height:1.7;color:#6b7863;margin-top:5px;word-break:keep-all;overflow-wrap:anywhere}
-.week-row.ready{background:#f1f6e9;border-color:#bbcea9;box-shadow:inset 0 3px 0 #70945b}
-.week-row.ready .week-number{color:var(--green)}
-.week-action{grid-column:1/-1;justify-self:end;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--green);color:white;padding:8px 12px;border-radius:7px;font-size:13px;white-space:nowrap}
-.week-action:hover{background:#183f35}
-.week-action svg{width:17px;height:17px}
-.week-status{grid-column:1/-1;justify-self:end;align-self:center;color:#6e7d65;font-size:13px;border:1px solid #dee4d8;border-radius:6px;padding:6px 10px;background:#f3f5ef;white-space:nowrap}
-.week-row[aria-disabled="true"]{cursor:default}
-.event-row{background:#fbfaf6;border-color:#e5dfcf}
-.event-row .week-status{background:#f4f0e5;border-color:#e5dfcf;color:#85704d}
-@media(max-width:1000px){
- .schedule{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:760px){
- .container{padding:0 22px}
- .masthead{padding:21px 0}
- .brand{font-size:16px}
- .brand-mark{width:25px;height:25px}
- .semester{font-size:13px}
- .schedule-heading{padding:20px 0 18px}
- .schedule-heading h1{font-size:21px}
- .availability{font-size:12px}
- .schedule{gap:14px}
- .week-row{padding:18px;gap:12px 10px}
- .topic h2{font-size:18px}
- .topic p{font-size:13px}
-}
-@media(max-width:600px){
- .schedule{grid-template-columns:1fr;grid-auto-rows:auto}
- .week-row{min-height:196px}
-}
-@media(max-width:380px){
- .container{padding:0 16px}
- .brand{font-size:15px}
- .semester{font-size:12px}
- .availability{gap:4px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<link rel="stylesheet" href="assets/course.css">
+<link rel="stylesheet" href="assets/overview.css">
 </head>
 <!-- Noto Sans KR subset, SIL Open Font License.
 Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
@@ -242,7 +174,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <div class="container">
  <header class="masthead"><div class="brand"><svg class="brand-mark" viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect width="13" height="13" rx="3" fill="#245e4f"/><rect x="17" width="13" height="13" rx="3" fill="#c4d8b0"/><rect y="17" width="13" height="13" rx="3" fill="#c4d8b0"/><rect x="17" y="17" width="13" height="13" rx="3" fill="#70945b"/></svg>컴퓨팅핵심</div><span class="semester">2026학년도 2학기</span></header>
  <main>
-  <section id="schedule" aria-labelledby="schedule-title"><div class="schedule-heading"><h1 id="schedule-title">주차별 실습</h1><p class="availability"><span class="live-dot" aria-hidden="true"></span><b>1–7주차</b> 열림 / 전체 15주</p></div><ol class="schedule"><li><article class="week-row ready" data-week="1"><span class="week-number">01<small>주차</small></span><span class="week-day"><time datetime="2026-09-04">9/4</time><span>금요일</span></span><div class="topic"><h2>교과목 OT</h2><p>Elice 사용법과 파이썬 기초 복습</p></div><a class="week-action" href="week1_prac.html" aria-label="1주차 실습 열기">실습 열기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article></li>
+  <section id="schedule" aria-labelledby="schedule-title"><div class="schedule-heading"><div><span class="eyebrow">COMPUTING / PRACTICE</span><h1 id="schedule-title">주차별 실습</h1><p class="schedule-intro">문제를 읽고, 코드를 완성하고, 실행 흐름을 따라가 보세요.</p></div><p class="availability"><span class="live-dot" aria-hidden="true"></span><b>1–7주차</b> 열림 / 전체 15주</p></div><ol class="schedule"><li><article class="week-row ready" data-week="1"><span class="week-number">01<small>주차</small></span><span class="week-day"><time datetime="2026-09-04">9/4</time><span>금요일</span></span><div class="topic"><h2>교과목 OT</h2><p>Elice 사용법과 파이썬 기초 복습</p></div><a class="week-action" href="week1_prac.html" aria-label="1주차 실습 열기">실습 열기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article></li>
 <li><article class="week-row ready" data-week="2"><span class="week-number">02<small>주차</small></span><span class="week-day"><time datetime="2026-09-11">9/11</time><span>금요일</span></span><div class="topic"><h2>파이썬 심화</h2><p>자료형·내장 함수·예외 처리</p></div><a class="week-action" href="week2_prac.html" aria-label="2주차 실습 열기">실습 열기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article></li>
 <li><article class="week-row ready" data-week="3"><span class="week-number">03<small>주차</small></span><span class="week-day"><time datetime="2026-09-18">9/18</time><span>금요일</span></span><div class="topic"><h2>클래스와 객체 지향</h2><p>클래스·객체·캡슐화의 기본 개념</p></div><a class="week-action" href="week3_prac.html" aria-label="3주차 실습 열기">실습 열기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article></li>
 <li><article class="week-row ready" data-week="4"><span class="week-number">04<small>주차</small></span><span class="week-day"><time datetime="2026-09-25">9/25</time><span>금요일</span></span><div class="topic"><h2>재귀 함수</h2><p>종료 조건과 재귀 호출의 흐름</p></div><a class="week-action" href="week4_prac.html" aria-label="4주차 실습 열기">실습 열기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article></li>
