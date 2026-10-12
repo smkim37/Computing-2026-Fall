@@ -12,7 +12,7 @@
 | 2주차 | 파이썬 심화 | [노트북](<practice/2주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week2_prac.html) |
 | 3주차 | 클래스와 객체 지향 | [노트북](<practice/3주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week3_prac.html) |
 | 4주차 | 재귀 함수 | [노트북](<practice/4주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week4_prac.html) |
-| 5주차 | 선형 자료구조 |  |  |
+| 5주차 | 선형 자료구조 | [노트북](<practice/5주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week5_prac.html) |
 | 6주차 | 정렬 알고리즘 | [노트북](<practice/6주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week6_prac.html) |
 | 7주차 | 탐색 알고리즘 | [노트북](<practice/7주차 실습.ipynb>) | [웹 실습](https://sumin-kim.com/Computing-2026-Fall/week7_prac.html) |
 | 8주차 | 중간고사 |  |  |

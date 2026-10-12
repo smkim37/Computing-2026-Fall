@@ -1,0 +1,25 @@
+{
+  "tool": "imagegen (built-in)",
+  "prompts": [
+    {
+      "id": "chal1",
+      "prompt": "Create one landscape 3:2 educational illustration for a Korean university beginner programming practice notebook. Soft clean editorial illustration, ivory background, forest green and muted warm accents, tidy campus environment, friendly adult students, horizontal composition, no text, no labels, no numbers, no arrows, no code, no algorithm diagrams, no watermark. Depict the situation only, do not reveal a solution. A university student editing a club poster on a desktop monitor; poster has only geometric colored shapes and a photo placeholder; a pen tablet, design drafts and color swatches on the desk. Focus on editing a poster."
+    },
+    {
+      "id": "chal2",
+      "prompt": "Create one landscape 3:2 educational illustration for a Korean university beginner programming practice notebook. Soft clean editorial illustration, ivory background, forest green and muted warm accents, tidy campus environment, friendly adult students, horizontal composition, no text, no labels, no numbers, no arrows, no code, no algorithm diagrams, no watermark. Depict the situation only, do not reveal a solution. A campus library printing corner with one printer and two students waiting calmly with different document folders. Papers and a laptop beside the printer. Focus on documents waiting to print."
+    },
+    {
+      "id": "chal3",
+      "prompt": "Create one landscape 3:2 educational illustration for a Korean university beginner programming practice notebook. Soft clean editorial illustration, ivory background, forest green and muted warm accents, tidy campus environment, friendly adult students, horizontal composition, no text, no labels, no numbers, no arrows, no code, no algorithm diagrams, no watermark. Depict the situation only, do not reveal a solution. A low single horizontal storage shelf open at BOTH left and right ends, with camera, folded tripod, and lamp arranged in a row; two students stand at opposite ends preparing to store or retrieve gear. Show both ends clearly, no arrows."
+    },
+    {
+      "id": "chal4",
+      "prompt": "Create one landscape 3:2 educational illustration for a Korean university beginner programming practice notebook. Soft clean editorial illustration, ivory background, forest green and muted warm accents, tidy campus environment, friendly adult students, horizontal composition, no text, no labels, no numbers, no arrows, no code, no algorithm diagrams, no watermark. Depict the situation only, do not reveal a solution. A small cheerful university campus with entrance gate, library, student center and a small cafe, walking paths and a student guide holding a campus map. No textual labels or directional arrows, do not depict insertion steps."
+    },
+    {
+      "id": "extra1",
+      "prompt": "Create one landscape 3:2 educational illustration for a Korean university beginner programming practice notebook. Soft clean editorial illustration, ivory background, forest green and muted warm accents, tidy campus environment, friendly adult students, horizontal composition, no text, no labels, no numbers, no arrows, no code, no algorithm diagrams, no watermark. Depict the situation only, do not reveal a solution. A campus print desk with printer, a tray of waiting documents, a separate tray of completed documents; a student checks a just-printed sheet beside the trays. Distinguish trays visually with color only, no text or arrows."
+    }
+  ]
+}
