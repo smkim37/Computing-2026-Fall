@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chal1",
+    "source": "/home/sumin/.codex/generated_images/01a12e36-c945-78a2-9c2e-7aedac05fd7c/exec-45cf1de2-51fc-419e-bf98-eed2a62d3dab.png",
+    "prompt": "Use case: illustration-story. Asset type: landscape illustration for a Korean introductory Python notebook. A university club registration desk. A student volunteer checks a row of paper application cards with small numeric labels and a visitor's request slip. Cards are in arrival order, casually mixed rather than sorted. Warm welcoming campus atmosphere. Style: clean editorial educational illustration, soft cream background, muted teal and warm orange accents, gentle outlines, clear readable composition, 3:2 landscape. No headings, no readable words, no code, no formulas, no flowchart arrows, no solutions, no watermark. Only small incidental numeric labels are permitted. Full scene in one image.",
+    "file": "images/week7/week7_chal1.png",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "chal2",
+    "source": "/home/sumin/.codex/generated_images/01a12e36-c945-78a2-9c2e-7aedac05fd7c/exec-944db860-756d-4ee4-a34f-546ca51aa0e4.png",
+    "prompt": "Use case: illustration-story. Asset type: landscape illustration for a Korean introductory Python notebook. A university library. A student looks up a book using a neatly arranged shelf with small increasing numeric spine labels. Include a small catalog monitor and a librarian, with some books visible on a return cart. Calm studying atmosphere. Style: clean editorial educational illustration, soft cream background, muted teal and warm orange accents, gentle outlines, clear readable composition, 3:2 landscape. No headings, no readable words, no code, no formulas, no flowchart arrows, no solutions, no watermark. Only small incidental numeric labels are permitted. Full scene in one image.",
+    "file": "images/week7/week7_chal2.png",
+    "tool": "built-in image_gen"
+  },
+  {
+    "id": "chal3",
+    "source": "/home/sumin/.codex/generated_images/01a12e36-c945-78a2-9c2e-7aedac05fd7c/exec-7c2cd487-6a2c-40a4-a2e8-863587267d33.png",
+    "prompt": "Use case: illustration-story. Asset type: landscape illustration for a Korean introductory Python notebook. A university equipment storage counter. A student holds a numbered claim ticket near a bank of small numbered lockers and several camera-equipment cases waiting to be stored. Communicate the relationship between numbered items and storage compartments without showing the mapping rule. Style: clean editorial educational illustration, soft cream background, muted teal and warm orange accents, gentle outlines, clear readable composition, 3:2 landscape. No headings, no readable words, no code, no formulas, no flowchart arrows, no solutions, no watermark. Only small incidental numeric labels are permitted. Full scene in one image.",
+    "file": "images/week7/week7_chal3.png",
+    "tool": "built-in image_gen",
+    "original_source": "/home/sumin/.codex/generated_images/01a12e36-c945-78a2-9c2e-7aedac05fd7c/exec-274c7152-de85-4c22-b4cb-3c3b8c536759.png",
+    "edit_prompt": "Edit this educational illustration. Preserve the people, equipment cases, composition, colors and overall drawing style. Remove every numeric label from the locker doors, leaving plain unnumbered teal locker doors with their handles and hinges. Keep the claim ticket in the student's hand. The locker bank is only a situational illustration, not a diagram of the actual 13-slot table. No new words, numbers, arrows or annotations."
+  },
+  {
+    "id": "extra1",
+    "source": "/home/sumin/.codex/generated_images/01a12e36-c945-78a2-9c2e-7aedac05fd7c/exec-0c452804-5001-4498-81fd-41a010f2a483.png",
+    "prompt": "Use case: illustration-story. Asset type: landscape illustration for a Korean introductory Python notebook. A university library help desk with a student checking a short list of several requested books. A librarian consults a catalog monitor, with books on the desk and shelves behind. Communicate repeated availability queries, without borrowing or moving any book. Style: clean editorial educational illustration, soft cream background, muted teal and warm orange accents, gentle outlines, clear readable composition, 3:2 landscape. No headings, no readable words, no code, no formulas, no flowchart arrows, no solutions, no watermark. Only small incidental numeric labels are permitted. Full scene in one image.",
+    "file": "images/week7/week7_extra1.png",
+    "tool": "built-in image_gen"
+  }
+]
